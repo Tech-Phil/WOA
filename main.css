@@ -3,6 +3,7 @@ main section {
     height: 80vh;
 }
 .section-one {
+    margin-top: 60px;
     background-color: rgb(255, 255, 255);
 }
 
