@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+header {
+    background-color: aqua;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    flex: 1;
+    height: 100%;
+}
+.left-side {
+    margin-left: 20px;
+    justify-content: start;
+}
+.center {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: bold;
+}
+.right-side {
+    margin-right: 20px;
+}
