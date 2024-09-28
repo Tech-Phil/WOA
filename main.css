@@ -1,10 +1,9 @@
 main section {
   display: flex;
-  height: 80vh;
 }
 .section-one {
   margin-top: 55px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgba(41, 41, 41, 0.637);
 }
 
 .section-two {
@@ -16,7 +15,7 @@ main section {
 }
 .grid-title {
   background-color: blueviolet;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .grid-items {
   display: grid;
@@ -30,7 +29,6 @@ main section {
 .grid-container {
   border: 1px solid white;
 }
-
 .section-three {
   display: flex;
   flex-direction: column;
@@ -69,8 +67,13 @@ footer {
   background-color: beige;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .grid-items {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .grid-items {
+    grid-template-columns: 1fr 1fr;
   }
 }

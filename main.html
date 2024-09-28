@@ -6,9 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main.css" />
-    <style>
+    <link rel="stylesheet" href="carousel.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+<style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
     </style>
+   
   </head>
   <body>
     <header class="header-nav">
@@ -45,7 +51,24 @@
       </div>
     </header>
     <main>
-      <section class="section-one">1</section>
+      <section class="section-one">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="art-img/main-img1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="art-img/main-img3.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
       <section class="section-two">
         <p class="grid-title">
           Discover Art Created by <br />
@@ -146,5 +169,32 @@
       <section class="section-four">4</section>
     </main>
     <footer>footer</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 500,
+          modifier: 0.5,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        
+      });
+    </script>
   </body>
 </html>
