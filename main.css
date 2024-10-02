@@ -1,8 +1,5 @@
-main section {
-  display: flex;
-}
 .section-one {
-  margin-top: 55px;
+  margin-top: 56px;
   background-color: rgba(41, 41, 41, 0.637);
 }
 
@@ -11,33 +8,58 @@ main section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightpink;
+  margin-bottom: 40px;
+  padding: 0 4%;
+}
+.grid-container-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 3% 4%;
 }
 .grid-title {
-  background-color: blueviolet;
-  font-size: 2rem;
+  text-align: center;
 }
 .grid-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5px;
-  background-color: aqua;
   flex: 1;
   width: 100%;
   max-width: 1200px;
 }
 .grid-container {
+  padding-bottom: 20px;
   border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.grid-img {
+  border: none;
+  width: 100%;
+}
+.grid-name {
+  padding: 0;
+  font-weight: 400;
+  color: rgb(71, 69, 69);
+}
+.grid-price {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(88, 88, 88);
 }
 .section-three {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 4%;
 }
 .upper-art,
 .lower-art {
   display: flex;
-  border: 1px solid red;
   flex: 1;
   width: 100%;
   max-width: 1200px;
@@ -48,10 +70,16 @@ main section {
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
-  flex: 0.6;
+  flex: 1;
 }
 .img-box {
-  flex: 1;
+  flex: 2;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
 }
 
 .section-four {
@@ -75,5 +103,8 @@ footer {
 @media (max-width: 600px) {
   .grid-items {
     grid-template-columns: 1fr 1fr;
+  }
+  .section-three {
+    padding: 0;
   }
 }
