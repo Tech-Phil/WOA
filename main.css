@@ -112,3 +112,9 @@ footer {
     padding: 0;
   }
 }
+@media (max-width: 440px) {
+  .grid-container-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
