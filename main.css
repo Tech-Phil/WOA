@@ -1,6 +1,7 @@
 .section-one {
   margin-top: 56px;
   background-color: rgba(41, 41, 41, 0.637);
+  border: none;
 }
 
 .section-two {
@@ -10,6 +11,9 @@
   align-items: center;
   margin-bottom: 40px;
   padding: 0 4%;
+  z-index: 2;
+  margin-top: -5px;
+  overflow-y: scroll;
 }
 .grid-container-title {
   font-size: 1.5rem;

@@ -85,14 +85,35 @@ header div {
 .link-name {
   font-size: 12px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .header-nav {
+    padding: 0 4%;
+  }
+  .search-button {
+    width: 45px;
+  }
   .right-side {
     flex: 1;
+    margin-right: 0;
+  }
+  .link-icon {
+    width: 32px;
+    padding: 2px;
+  }
+  .link-name {
+    display: none;
   }
   .left-side {
+    min-width: 122px;
     flex: 1;
+    margin-left: 0;
+    display: flex;
+  }
+  .logo-img {
+    width: 100%;
   }
   .left-side p {
-    font-size: 0;
+    flex: 2;
+    font-size: 13px;
   }
 }
