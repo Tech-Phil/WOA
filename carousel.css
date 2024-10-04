@@ -17,3 +17,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 40px;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 30px;
+  }
+  .swiper-pagination-bullet {
+    --swiper-pagination-bullet-size: 7px
+  }
+}
