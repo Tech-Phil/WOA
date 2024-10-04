@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header-nav">
-      <a class="left-side" href="/main.html">
+      <a class="left-side">
         <img class="logo" src="icon/window-svgrepo-com.svg" alt="logo" />
         <p>Work of Art</p>
       </a>
@@ -51,7 +51,7 @@
       </div>
     </header>
     <main>
-      <section class="section-one">
+      <section class="section-one" >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -265,28 +265,6 @@
       class="grid-img"
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 500,
-          modifier: 0.5,
-          slideShadows: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
