@@ -93,12 +93,24 @@
 footer {
   font-size: 45px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 30vh;
-  background-color: beige;
+  background-color: #313131;
+  color: #cdcdcd;
+  padding: 2rem 1rem;
 }
-
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+ul {
+  list-style: none;
+}
+.social-img {
+  width: 30px;
+  height: 30px;
+}
 @media (max-width: 950px) {
   .grid-items {
     grid-template-columns: 1fr 1fr 1fr;
